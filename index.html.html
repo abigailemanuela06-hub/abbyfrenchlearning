@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Bahasa Prancis: L'Article Partitif</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0f9ff; /* Biru pastel super muda */
+        }
+        .tab-active {
+            border-bottom: 4px solid #7dd3fc; /* sky-300 */
+            color: #0369a1; /* sky-700 */
+            font-weight: 700;
+        }
+        .tab-inactive {
+            color: #94a3b8;
+            border-bottom: 4px solid transparent;
+        }
+        .tab-inactive:hover {
+            color: #475569;
+            border-bottom: 4px solid #e0f2fe;
+        }
+        .fade-in {
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="text-slate-700 bg-sky-50 font-sans">
+
+    <!-- Header -->
+    <header class="bg-sky-200 text-sky-900 shadow-sm border-b-4 border-sky-300 rounded-b-3xl mb-4">
+        <div class="max-w-5xl mx-auto px-4 py-8 text-center">
+            <h1 class="text-3xl md:text-4xl font-bold mb-2">🌸 Apprenons le Français! ✨</h1>
+            <p class="text-sky-700 text-lg font-medium">Materi: L'Article Partitif</p>
+        </div>
+    </header>
+
+    <!-- Navigation Tabs -->
+    <nav class="bg-white/80 backdrop-blur-sm shadow-sm sticky top-0 z-10 rounded-2xl mx-4 md:mx-auto max-w-5xl border border-sky-50 mt-4">
+        <div class="px-4 flex justify-center space-x-8">
+            <button id="btn-materi" class="py-4 px-2 tab-active transition duration-300 focus:outline-none" onclick="switchTab('materi')">
+                📚 Materi
+            </button>
+            <button id="btn-latihan" class="py-4 px-2 tab-inactive transition duration-300 focus:outline-none" onclick="switchTab('latihan')">
+                ✍️ Latihan Soal
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-4 py-8">
+        
+        <!-- MATERI SECTION -->
+        <section id="sec-materi" class="fade-in block">
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-10 mb-8 border-t-8 border-sky-300">
+                <h2 class="text-2xl font-bold text-sky-800 mb-4 border-b-2 border-sky-50 pb-2">Apa itu Article Partitif? 💭</h2>
+                <p class="mb-4 text-slate-600 leading-relaxed">
+                    Dalam bahasa Prancis, <strong>Article Partitif</strong> digunakan untuk merujuk pada benda yang <em>tidak dapat dihitung (uncountable)</em> atau benda yang jumlahnya <em>tidak spesifik/tidak diketahui secara pasti</em>. 
+                </p>
+                <p class="mb-6 text-slate-600 leading-relaxed">
+                    Dalam bahasa Indonesia, ini mirip dengan kata "sejumlah" atau "sedikit", dan dalam bahasa Inggris mirip dengan "some" atau "any". Article Partitif sangat sering digunakan saat membicarakan makanan atau minuman.
+                </p>
+
+                <h3 class="text-xl font-bold mb-4 text-sky-600">Bentuk-bentuk Article Partitif ✨</h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                    <!-- Du -->
+                    <div class="bg-sky-50 border-l-8 border-sky-400 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
+                        <div class="font-bold text-lg text-sky-800 mb-1">du <span class="text-sm font-normal text-sky-600">(de + le)</span></div>
+                        <p class="text-sm text-slate-600 mb-3">Untuk kata benda <strong>Maskulin Tunggal</strong> yang berawalan huruf konsonan.</p>
+                        <ul class="text-sm bg-white p-3 rounded-xl border border-sky-100 space-y-1">
+                            <li>🥐 Je mange <strong>du</strong> pain (roti).</li>
+                            <li>🥛 Il boit <strong>du</strong> lait (susu).</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- De la -->
+                    <div class="bg-pink-50 border-l-8 border-pink-300 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
+                        <div class="font-bold text-lg text-pink-700 mb-1">de la</div>
+                        <p class="text-sm text-slate-600 mb-3">Untuk kata benda <strong>Feminin Tunggal</strong> yang berawalan huruf konsonan.</p>
+                        <ul class="text-sm bg-white p-3 rounded-xl border border-pink-100 space-y-1">
+                            <li>🥩 Tu veux <strong>de la</strong> viande (daging)?</li>
+                            <li>🥗 Je mange <strong>de la</strong> salade (selada).</li>
+                        </ul>
+                    </div>
+
+                    <!-- De l' -->
+                    <div class="bg-purple-50 border-l-8 border-purple-300 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
+                        <div class="font-bold text-lg text-purple-700 mb-1">de l'</div>
+                        <p class="text-sm text-slate-600 mb-3">Untuk kata benda tunggal berawalan <strong>huruf vokal atau 'h' bisu</strong>.</p>
+                        <ul class="text-sm bg-white p-3 rounded-xl border border-purple-100 space-y-1">
+                            <li>💧 Je bois <strong>de l'</strong>eau (air).</li>
+                            <li>🫒 Il achète <strong>de l'</strong>huile (minyak).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Des -->
+                    <div class="bg-emerald-50 border-l-8 border-emerald-300 p-5 rounded-2xl shadow-sm hover:shadow-md transition">
+                        <div class="font-bold text-lg text-emerald-700 mb-1">des <span class="text-sm font-normal text-emerald-600">(de + les)</span></div>
+                        <p class="text-sm text-slate-600 mb-3">Untuk kata benda <strong>Jamak (Plural)</strong>, baik maskulin maupun feminin.</p>
+                        <ul class="text-sm bg-white p-3 rounded-xl border border-emerald-100 space-y-1">
+                            <li>🍎 Elle mange <strong>des</strong> pommes (apel-apel).</li>
+                            <li>👫 Nous avons <strong>des</strong> amis (teman-teman).</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="bg-rose-50 p-6 rounded-3xl border-2 border-rose-200 shadow-sm">
+                    <h3 class="text-lg font-bold text-rose-600 mb-2">⚠️ Pengecualian Penting! (Bentuk Negatif)</h3>
+                    <p class="text-slate-700 mb-3">
+                        Dalam kalimat negatif (menggunakan <em>ne ... pas</em>), semua article partitif (du, de la, de l', des) berubah menjadi <strong>de</strong> atau <strong>d'</strong> (jika bertemu vokal).
+                    </p>
+                    <ul class="space-y-2 text-sm text-slate-700 ml-2">
+                        <li class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm">✅ Positif: Je mange <strong>du</strong> pain.<br>❌ Negatif: Je ne mange pas <strong>de</strong> pain.</li>
+                        <li class="bg-white p-3 rounded-xl border border-rose-100 shadow-sm">✅ Positif: Je bois <strong>de l'</strong>eau.<br>❌ Negatif: Je ne bois pas <strong>d'</strong>eau.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="text-center">
+                <button onclick="switchTab('latihan')" class="bg-sky-400 hover:bg-sky-500 text-white font-bold py-4 px-10 rounded-full shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl">
+                    Coba Latihan Soal 🚀
+                </button>
+            </div>
+        </section>
+
+        <!-- LATIHAN SOAL SECTION -->
+        <section id="sec-latihan" class="fade-in hidden">
+            <div class="bg-white rounded-3xl shadow-sm p-6 md:p-10 border-t-8 border-cyan-300">
+                <h2 class="text-2xl font-bold text-cyan-800 mb-2">Latihan Soal 📝</h2>
+                <p class="text-slate-500 mb-8 border-b-2 border-cyan-50 pb-4">Pilih article partitif yang tepat untuk melengkapi kalimat di bawah ini!</p>
+
+                <form id="quiz-form" onsubmit="submitQuiz(event)">
+                    
+                    <!-- Soal 1 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">1. Le matin, je bois _______ café.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q1" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q1" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q1" value="de l'" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de l'</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 2 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">2. Elle achète _______ confiture pour le petit-déjeuner.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q2" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q2" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q2" value="des" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">des</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 3 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">3. Nous voulons _______ eau s'il vous plaît.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q3" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q3" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q3" value="de l'" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de l'</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 4 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">4. Tu manges _______ légumes tous les jours.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q4" value="des" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">des</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q4" value="les" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">les</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q4" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 5 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">5. Je ne bois pas _______ soda.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q5" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q5" value="de" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q5" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 6 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">6. Je voudrais _______ viande, s'il vous plaît.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q6" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q6" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q6" value="des" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">des</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 7 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">7. Il faut _______ huile pour cette recette.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q7" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q7" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q7" value="de l'" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de l'</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Soal 8 -->
+                    <div class="mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors">
+                        <p class="font-medium text-sky-900 mb-4">8. Nous mangeons _______ fromage ce soir.</p>
+                        <div class="flex flex-wrap gap-4">
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q8" value="du" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">du</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q8" value="de la" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de la</span>
+                            </label>
+                            <label class="flex items-center space-x-2 cursor-pointer bg-white px-4 py-2 rounded-xl shadow-sm border border-sky-100 hover:bg-sky-100 transition">
+                                <input type="radio" name="q8" value="de" class="text-sky-500 focus:ring-sky-400 w-4 h-4">
+                                <span class="text-slate-700 font-medium">de</span>
+                            </label>
+                        </div>
+                        <div class="feedback mt-4 hidden"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <div class="mt-10 text-center">
+                        <button type="submit" class="bg-cyan-400 hover:bg-cyan-500 text-white font-bold py-4 px-12 rounded-full shadow-lg transition transform hover:-translate-y-1 hover:shadow-xl text-lg">
+                            Periksa Jawaban ✨
+                        </button>
+                    </div>
+                </form>
+
+                <!-- Result Box -->
+                <div id="result-box" class="hidden mt-10 p-8 rounded-3xl text-center shadow-sm">
+                    <h3 id="result-score" class="text-4xl font-bold mb-3"></h3>
+                    <p id="result-msg" class="text-xl text-slate-600 mb-6"></p>
+                    <button onclick="resetQuiz()" class="text-sky-600 border-2 border-sky-200 hover:bg-sky-50 font-bold py-3 px-8 rounded-full shadow-sm transition">🔄 Ulangi Latihan</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="text-center text-sky-600/70 text-sm pb-8 font-medium">
+        &copy; 2024 Pembelajaran Bahasa Prancis Interaktif 🌸
+    </footer>
+
+    <script>
+        // Fungsi untuk navigasi tab
+        function switchTab(tabId) {
+            const materiSec = document.getElementById('sec-materi');
+            const latihanSec = document.getElementById('sec-latihan');
+            const btnMateri = document.getElementById('btn-materi');
+            const btnLatihan = document.getElementById('btn-latihan');
+
+            if (tabId === 'materi') {
+                materiSec.classList.remove('hidden');
+                latihanSec.classList.add('hidden');
+                btnMateri.classList.add('tab-active');
+                btnMateri.classList.remove('tab-inactive');
+                btnLatihan.classList.add('tab-inactive');
+                btnLatihan.classList.remove('tab-active');
+            } else {
+                latihanSec.classList.remove('hidden');
+                materiSec.classList.add('hidden');
+                btnLatihan.classList.add('tab-active');
+                btnLatihan.classList.remove('tab-inactive');
+                btnMateri.classList.add('tab-inactive');
+                btnMateri.classList.remove('tab-active');
+            }
+        }
+
+        // Kunci Jawaban
+        const answers = {
+            q1: 'du',      
+            q2: 'de la',   
+            q3: 'de l\'',  
+            q4: 'des',     
+            q5: 'de',      
+            q6: 'de la',   
+            q7: 'de l\'',  
+            q8: 'du'       
+        };
+
+        // Ulasan/Penjelasan detail untuk ditampilkan saat menjawab
+        const explanations = {
+            q1: '"Café" adalah kata benda maskulin tunggal, jadi kita menggunakan <strong>du</strong>.',
+            q2: '"Confiture" (selai) adalah kata benda feminin tunggal, jadi menggunakan <strong>de la</strong>.',
+            q3: '"Eau" (air) berawalan huruf vokal, jadi article-nya melebur menjadi <strong>de l\'</strong>.',
+            q4: '"Légumes" (sayuran) berakhiran -s yang menandakan bentuk jamak, jadi menggunakan <strong>des</strong>.',
+            q5: 'Ini kalimat negatif (Je ne bois pas). Dalam bentuk negatif, partitif selalu berubah menjadi <strong>de</strong> atau <strong>d\'</strong>!',
+            q6: '"Viande" (daging) adalah kata benda feminin tunggal, sehingga pasangannya adalah <strong>de la</strong>.',
+            q7: '"Huile" (minyak) diawali dengan huruf \'h\' bisu (dianggap seperti vokal), jadi menggunakan <strong>de l\'</strong>.',
+            q8: '"Fromage" (keju) adalah kata benda maskulin tunggal, jadi menggunakan <strong>du</strong>.'
+        };
+
+        // Fungsi submit kuis
+        function submitQuiz(e) {
+            e.preventDefault();
+            const form = document.getElementById('quiz-form');
+            const blocks = document.querySelectorAll('.question-block');
+            
+            let score = 0;
+            let answeredAll = true;
+            const totalQuestions = Object.keys(answers).length;
+
+            // Validasi apakah semua dijawab
+            for (let i = 1; i <= totalQuestions; i++) {
+                if (!form['q' + i].value) answeredAll = false;
+            }
+
+            if (!answeredAll) {
+                const resultBox = document.getElementById('result-box');
+                resultBox.classList.remove('hidden');
+                resultBox.className = 'mt-10 p-6 rounded-3xl text-center bg-amber-50 border-2 border-amber-200 fade-in';
+                document.getElementById('result-score').innerText = 'Oops! 🙈';
+                document.getElementById('result-score').className = 'text-3xl font-bold mb-2 text-amber-600';
+                document.getElementById('result-msg').innerText = 'Harap jawab semua soal terlebih dahulu ya, jangan ada yang terlewat!';
+                return;
+            }
+
+            // Cek Jawaban dan Tampilkan Feedback Interaktif
+            blocks.forEach((block, index) => {
+                const qNum = 'q' + (index + 1);
+                const userAnswer = form[qNum].value;
+                const correctAnswer = answers[qNum];
+                const feedbackEl = block.querySelector('.feedback');
+
+                feedbackEl.classList.remove('hidden');
+
+                if (userAnswer === correctAnswer) {
+                    score++;
+                    block.classList.add('bg-green-50', 'border-green-300');
+                    block.classList.remove('bg-sky-50/50', 'bg-rose-50/50', 'border-sky-100', 'border-rose-100');
+                    feedbackEl.innerHTML = `
+                        <div class="text-green-600 font-bold mb-1 text-lg">✨ Yeay, Benar!</div>
+                        <div class="text-slate-600 text-sm bg-white p-3 rounded-xl border border-green-100 shadow-sm mt-2">
+                            💡 <strong>Penjelasan:</strong> ${explanations[qNum]}
+                        </div>
+                    `;
+                } else {
+                    block.classList.add('bg-rose-50', 'border-rose-300');
+                    block.classList.remove('bg-sky-50/50', 'bg-green-50', 'border-sky-100', 'border-green-300');
+                    feedbackEl.innerHTML = `
+                        <div class="text-rose-500 font-bold mb-1 text-lg">🥺 Ups, masih kurang tepat.</div>
+                        <div class="text-slate-700 text-sm mb-2">Jawaban yang benar adalah <span class="font-bold text-rose-600 bg-white px-2 py-1 rounded shadow-sm">${correctAnswer}</span>.</div>
+                        <div class="bg-white p-3 rounded-xl border border-rose-200 text-sm text-slate-600 mt-2 shadow-sm">
+                            💡 <strong>Ingat Aturan Ini:</strong><br>${explanations[qNum]}
+                        </div>
+                    `;
+                }
+            });
+
+            // Tampilkan Skor Akhir
+            const resultBox = document.getElementById('result-box');
+            resultBox.classList.remove('hidden');
+            const resultScore = document.getElementById('result-score');
+            const resultMsg = document.getElementById('result-msg');
+
+            resultScore.innerText = `Skor Kamu: ${score} / ${totalQuestions}`;
+
+            if (score === totalQuestions) {
+                resultBox.className = 'mt-10 p-8 rounded-3xl text-center bg-green-100 border-4 border-green-300 fade-in';
+                resultScore.className = 'text-4xl font-bold mb-3 text-green-700';
+                resultMsg.innerText = 'Trés bien! Sempurna! Kamu jago banget deh! 🎉';
+            } else if (score >= totalQuestions / 2) {
+                resultBox.className = 'mt-10 p-8 rounded-3xl text-center bg-sky-100 border-4 border-sky-300 fade-in';
+                resultScore.className = 'text-4xl font-bold mb-3 text-sky-700';
+                resultMsg.innerText = 'Bon travail! Sedikit lagi menuju sempurna, tetap semangat! 🌟';
+            } else {
+                resultBox.className = 'mt-10 p-8 rounded-3xl text-center bg-rose-100 border-4 border-rose-300 fade-in';
+                resultScore.className = 'text-4xl font-bold mb-3 text-rose-700';
+                resultMsg.innerText = 'Tidak apa-apa, jangan menyerah! Coba baca kembali materinya dan ulangi latihan ya. 💪';
+            }
+
+            // Disable radio buttons setelah disubmit
+            const radios = form.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => radio.disabled = true);
+            
+            // Sembunyikan tombol submit
+            form.querySelector('button[type="submit"]').classList.add('hidden');
+        }
+
+        // Reset Kuis
+        function resetQuiz() {
+            const form = document.getElementById('quiz-form');
+            form.reset();
+            
+            const blocks = document.querySelectorAll('.question-block');
+            blocks.forEach((block, index) => {
+                block.className = 'mb-6 bg-sky-50/50 p-5 rounded-2xl border border-sky-100 question-block transition-colors';
+                const feedbackEl = block.querySelector('.feedback');
+                feedbackEl.classList.add('hidden');
+                feedbackEl.innerHTML = '';
+            });
+
+            const radios = form.querySelectorAll('input[type="radio"]');
+            radios.forEach(radio => radio.disabled = false);
+
+            form.querySelector('button[type="submit"]').classList.remove('hidden');
+            document.getElementById('result-box').classList.add('hidden');
+            
+            window.scrollTo({ top: document.getElementById('sec-latihan').offsetTop - 100, behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
